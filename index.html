@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final final stage</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <!-- <div id=""></div> -->
+    <div id="login-screen" class="hidden">
+        <h2 id="login-title">Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="text" id="password" placeholder="Enter Password">
+        <button id="Start-game-button">Start Game</button>
+        <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </div>
+    <div id="signup-screen" class="hidden">
+        <h2 id>Sign Up</h2>
+        <input type="text" id="new-username" placeholder="Enter Username" />
+        <input type="text" id="new-password" placeholder="Enter Password" />
+        <button id="create-account">Create Account</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+
+        <p id="start-game-message" class="hidden">Start the game!</p>
+        <button id="start-game-button" class="hidden">Start Game</button>
+      </div>
+      
+      <div id="game-screen" class="hidden">
+        <h1>Space Invaders</h1>
+        <canvas id="game">
+            
+        </canvas>
+      </div>
+    <link rel="stylesheet" href="style.css">
+
+    </body>
+  <script  type="module" src="index.js"></script>
+</html> 
