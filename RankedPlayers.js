@@ -1,6 +1,6 @@
 export default class RankedPlayer {
-  constructor(userName, password, score) {
-    this.userName = userName;
+  constructor(username, password, score) {
+    this.username = username;
     this.password = password;
     this.score = score;
     // this.survivalTime = survivalTime;

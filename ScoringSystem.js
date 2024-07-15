@@ -6,12 +6,7 @@ export default class ScoringSystem {
 
   addPlayer(player) {
     //creating new user
-
     this.rankedPlayers.push(player);
-    console.log(this.rankedPlayers);
-
-    this.rankedPlayers.sort((a, b) => b.score - a.score);
-    console.log(this.rankedPlayers);
   }
   updatePlayer(player) {
     let playerIndex = this.rankedPlayers.findIndex(
@@ -21,13 +16,14 @@ export default class ScoringSystem {
   }
   findPlayer(username) {
     return this.rankedPlayers.find(
-      (rankedPlayer) => rankedPlayer.userName === username
+      (rankedPlayer) => rankedPlayer.username === username
     );
   }
   save() {
     localStorage.setItem("users", JSON.stringify(this.rankedPlayers));
   }
   getPlayers() {
+    this.rankedPlayers.sort((a, b) => b.score - a.score);
     return this.rankedPlayers;
   }
 }

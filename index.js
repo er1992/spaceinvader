@@ -135,7 +135,7 @@ function startGame() {
       ctx.font = "70px Arial";
       scoringSystem.getPlayers().forEach((player, index) => {
         ctx.fillText(
-          `${index + 1}. ${player.userName}: ${player.score}`,
+          `${index + 1}. ${player.username}: ${player.score}`,
           canvas.width / 4,
           canvas.height / 2 + (index + 1) * 50
         );
